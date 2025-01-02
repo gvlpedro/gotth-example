@@ -20,6 +20,12 @@ get-install-tailwindcss: ## Installs the tailwindcss cli
 	chmod +x tailwindcss-linux-x64
 	mv tailwindcss-linux-x64 tailwindcss
 
+.PHONY: get-install-tailwindcss-mac
+get-install-tailwindcss-mac: ## Installs the tailwindcss CLI for macOS
+	curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-macos-arm64
+	chmod +x tailwindcss-macos-arm64
+	mv tailwindcss-macos-arm64 tailwindcss
+
 .PHONY: tailwind-watch
 tailwind-watch: ## compile tailwindcss and watch for changes
 	./tailwindcss -i ./static/css/custom.css -o ./static/css/style.css --watch

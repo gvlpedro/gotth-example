@@ -10,8 +10,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/sigrdrifa/gotth-example/internal/store"
-	"github.com/sigrdrifa/gotth-example/internal/templates"
+	"github.com/gvlpedro/gotth-example/internal/store"
+	"github.com/gvlpedro/gotth-example/internal/templates"
 )
 
 type GuestStore interface {

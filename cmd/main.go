@@ -4,8 +4,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/sigrdrifa/gotth-example/internal/server"
-	"github.com/sigrdrifa/gotth-example/internal/store"
+	"github.com/gvlpedro/gotth-example/internal/server"
+	"github.com/gvlpedro/gotth-example/internal/store"
 )
 
 func main() {
